@@ -1,0 +1,25 @@
+- User:
++ ID: int(11)
++ Username: varchar(255)
++ Password: varchar(255)
++ AvatarLink: varchar(255)
++ Role: varchar(10)
++ Posted: int(11)
+
+- Category:
++ ID: int(11)
++ CatName: varchar(255)
++ CatSlug: varchar(255)
++ CatPosted: int(11)
+
+- Post:
++ ID: int(11)
++ Title: varchar(255)
++ Expert: varchar(255)
++ ThumbnailImageLink: varchar(255)
++ Content: json
++ Slug: varchar(255)
++ Author: varchar(255) [User ID]
++ Cat: varchar(255) [Category ID]
++ Time: datetime
++ View: int(11)

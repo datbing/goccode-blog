@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -11,16 +13,57 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   TÙY CHỈNH GIAO DIỆN REACT QUILL EDITOR
+========================================= */
+.ql-container {
+  font-family: inherit !important;
+  font-size: 15px !important;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+.ql-toolbar {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+/* CHẾ ĐỘ TỐI (DARK MODE) */
+.dark .ql-toolbar.ql-snow,
+.dark .ql-container.ql-snow {
+  border-color: #1e293b !important; /* border-slate-800 */
+}
+.dark .ql-toolbar.ql-snow {
+  background-color: #0f172a !important; /* bg-slate-900 */
+}
+.dark .ql-editor {
+  color: #f8fafc !important; /* text-slate-50 */
+}
+.dark .ql-snow .ql-stroke {
+  stroke: #cbd5e1 !important; /* Icon thanh công cụ màu xám sáng */
+}
+.dark .ql-snow .ql-fill, 
+.dark .ql-snow .ql-stroke.ql-fill {
+  fill: #cbd5e1 !important;
+}
+.dark .ql-snow .ql-picker {
+  color: #cbd5e1 !important;
+}
+.dark .ql-snow .ql-picker-options {
+  background-color: #0f172a !important;
+  border-color: #1e293b !important;
 }

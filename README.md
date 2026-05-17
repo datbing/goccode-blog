@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GocCode - Tech Blog Frontend
 
-## Getting Started
+GocCode là dự án Blog cá nhân chia sẻ kiến thức công nghệ, lập trình và kiến trúc hệ thống. Đây là kho chứa mã nguồn Frontend, được xây dựng dựa trên Next.js App Router và Tailwind CSS. Dự án tập trung vào trải nghiệm người dùng (UX/UI), tối ưu chuẩn SEO và tích hợp sẵn giao diện quản trị (Admin Dashboard) hoàn chỉnh.
 
-First, run the development server:
+## Tính năng nổi bật
 
-```bash
+### Giao diện người dùng (Client)
+- Hỗ trợ chế độ Sáng và Tối (Dark/Light Mode) với khả năng lưu cấu hình.
+- Thiết kế đáp ứng (Responsive) trên các màn hình PC, Tablet và Mobile.
+- Thanh điều hướng (Header) thông minh, tối ưu cấu trúc code (DRY).
+- Trang chủ tích hợp bộ lọc bài viết động theo danh mục (Category Pills).
+- Tối ưu hóa SEO: Hỗ trợ Meta Tags, Open Graph, tự động tạo file Robots.txt, Sitemap.xml và tích hợp cấu trúc dữ liệu JSON-LD.
+- Trang báo lỗi 404 tùy chỉnh.
+
+### Giao diện quản trị (Admin Dashboard)
+- Trang Đăng nhập quản trị viên.
+- Bảng quản lý bài viết: Tích hợp công cụ tìm kiếm và lọc dữ liệu theo danh mục, trạng thái.
+- Tương tác mượt mà với hệ thống thông báo trạng thái (Toast Notifications).
+- Trang Cấu hình hệ thống (Settings): Quản lý SEO, cấu hình Google Analytics, Search Console, Google AdSense và quyền hệ thống.
+
+## Công nghệ và Thư viện sử dụng
+- Framework: Next.js (App Router)
+- Thư viện cốt lõi: React
+- Định dạng giao diện: Tailwind CSS
+- Quản lý Theme: next-themes
+- Thư viện Icon: lucide-react
+- Thư viện thông báo: react-hot-toast
+
+## Cài đặt và khởi chạy dự án
+
+1. Sao chép dự án về máy cục bộ:
+bash
+git clone https://github.com/datbing/goccode-blog.git
+cd goccode-blog
+
+
+2. Cài đặt các thư viện phụ thuộc:
+bash
+npm install
+
+
+3. Khởi chạy môi trường phát triển:
+bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Xem dự án:
+Mở trình duyệt và truy cập vào địa chỉ: `http://localhost:3000`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Thông tin tác giả
+Dự án được phát triển bởi Đào Xuân Đạt - Đại học Giao thông Vận tải.
