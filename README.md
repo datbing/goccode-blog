@@ -48,4 +48,4 @@ npm run dev
 Mở trình duyệt và truy cập vào địa chỉ: `http://localhost:3000`
 
 ## Thông tin tác giả
-Dự án được phát triển bởi Đào Xuân Đạt - Đại học Giao thông Vận tải.
+Dự án được phát triển bởi datbing.
