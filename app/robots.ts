@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       disallow: ['/admin/', '/api/'], // CẤM quét khu vực quản trị và API
     },
     // Trỏ đường dẫn đến file sitemap để bot dễ tìm
-    sitemap: 'https://goccode.vn/sitemap.xml',
+    sitemap: 'https://goccode.vercel.app/sitemap.xml',
   };
 }
